@@ -21,8 +21,10 @@ export default () => {
         marginBottom: `1rem`,
       }}
     >
-      {cast.map(member => (
-        <img src={`images/${member.slug}_tn.svg`} alt={member.name} />
+      {cast.map((member) => (
+        <a key={member.id} data-tooltip={member.name}>
+          <img src={`images/${member.slug}_tn.svg`} alt={member.name} />
+        </a>
       ))}
     </div>
   );
