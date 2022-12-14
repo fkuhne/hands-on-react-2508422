@@ -4,7 +4,7 @@ import Modals from "./components/Modals";
 
 function App() {
   const name = "StarGazers";
-  const [cas, setCast] = useState([]);
+  const [cast, setCast] = useState([]);
   let [memberInfo, setMemberInfo] = useState(null);
 
   async function fetchCast() {
